@@ -103,3 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderStudents();  //displaying student details when page loads 
 });
+
+
+
+
