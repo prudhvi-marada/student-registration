@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden; 
+}
+header {
+    background: skyblue;
+    
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+    width:100%
+}
+
+.total-view{
+    display: flex;
+    justify-content:space-evenly;
+    background-image: url('bg-img2.jpg');
+    background-size: cover;
+    width: 100vw;
+    height:auto;
+  
+
+}
+
+.form-section {
+    margin-bottom: 20px;
+    width: 50vh;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.display-section{
+    margin-bottom: 20px;
+    width: 130vh;
+    background-color: transparent;
+    margin: 15px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover {
+    background: gold;
+    border-radius: 25px;
+
+}
+
+table {
+    width: 60vw;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color:yellow;
+    font-weight: bold;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+td button {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.scrollable {
+    max-height: 500px;
+    overflow: auto;
+    
+}
+h2{
+    text-align: center;
+    color: #e5e4e2;
+    font-weight:bold;
+    text-shadow:white;
+}
+label{
+    color: white;
+    font-weight: bolder;
+}
+
+/* for android view */
+@media (max-width: 800px) {
+    .total-view{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .form-section {
+        margin-bottom: 20px;
+        width: 100vw;
+        background-color: transparent;
+        margin: 15px;
+    }
+    
+    .display-section{
+        margin-bottom: 20px;
+        width: 100vw;
+        background-color: transparent;
+        margin: 15px;
+    }
+  }
+
+  input {
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/* animation effects for form  */
+input:focus {
+    box-shadow: 0 0 10px #00ffff, 
+                0 0 20px #00ffff, 
+                0 0 40px #00ffff;
+    animation: thunder 0.2s infinite alternate;
+}
+
+@keyframes thunder {
+    0% {
+        box-shadow: 0 0 10px #00ffff, 
+                    0 0 20px #00ffff, 
+                    0 0 40px #00ffff;
+        filter: brightness(1.2);
+    }
+    100% {
+        box-shadow: 0 0 15px #ffffff, 
+                    0 0 30px #ffffff, 
+                    0 0 60px #00ffff;
+        filter: brightness(1.5);
+    }
+}
+
+ 
